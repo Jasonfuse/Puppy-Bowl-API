@@ -10,7 +10,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
@@ -33,7 +33,7 @@ img {
     flex-direction: column;
     padding: 1rem;
     border: 1px solid black;
-    width: 10%;
+    width: fit-content;
     font-size: 2rem;
 }
 
