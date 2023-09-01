@@ -39,11 +39,19 @@ async function renderSinglePuppy() {
     teamMembers.splice(teamMembers.indexOf(pupList.singlePuppy.name), 1);
 
     singlePuppyInfo.innerHTML = `
-        <h3> ${pupList.singlePuppy.name} </h3>
-        <img src = ${pupList.singlePuppy.imageUrl}>
-        <p> Breed: ${pupList.singlePuppy.breed} </p>
-        <p> Status: ${pupList.singlePuppy.status} </p>
-        <p> Team Members: ${teamMembers.join(', ')} </p>
+        <hr/>
+        <h2> Selected Puppy </h2>
+        <div id = 'container'>
+            <div id = 'image'>
+                <img src = ${pupList.singlePuppy.imageUrl}>
+            </div>
+            <div id = 'puppyInfo'>
+                <h3> Name: ${pupList.singlePuppy.name} </h3>
+                <p> Breed: ${pupList.singlePuppy.breed} </p>
+                <p> Status: ${pupList.singlePuppy.status} </p>
+                <p> Team Members: ${teamMembers.join(', ')} </p>
+            </div>
+        <div>
     `;
 }
 
@@ -68,3 +76,5 @@ async function render() {
 }
 
 render();
+// hoisting - javascript (not used for arrow function)
+// typescript - group projects -inlcudes javascript (error-checking)

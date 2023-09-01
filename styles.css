@@ -21,13 +21,19 @@ h3 {
 p {
     font-family: cursive;
     font-size: 1.5rem;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+
 
 img {
     width: auto;
     height: auto;
     max-width: 400px;
     max-height: 400px;
+    animation: image 2s;
+    border-radius: 25px;
+    position: relative;
 }
 
 #puppyList {
@@ -35,17 +41,42 @@ img {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    border-radius: 25px;
     border: 1px solid black;
     width: fit-content;
     font-size: 2rem;
 }
 
+#container {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+#puppyInfo {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: fit-content;
+    background-color: rgba(130, 255, 147, 0.493);
+}
+
 .selected {
-    border: solid 3px white;
+    border: solid 2px white;
+    width: fit-content;
+    padding: 0.2rem;
 }
 
 @media (max-width: 500px) {
     nav {
         flex-direction: column;
     }
+}
+
+@keyframes image {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
